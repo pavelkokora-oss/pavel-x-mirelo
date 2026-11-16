@@ -290,6 +290,7 @@
   header.nav nav { display:none; }
   .video-badge { background:#dbffbc; color:#052e16; font-weight:500; }
   .half-join.target .half-tag { display:block; width:128px; height:32px; margin:0 auto 14px; font-size:0; color:transparent; background:url(mirelo-logo.svg) center/contain no-repeat; filter:invert(1); }
+  #contact .btn:not(.ghost) { background:transparent; color:var(--dark-ink); border:1px solid color-mix(in srgb, var(--dark-ink) 35%, transparent); }
 </style>
 </head>
 <body>
@@ -313,8 +314,8 @@
       
       <div class="video-wrap">
         <div class="video-card">
-          <div class="video-head"><img class="avatar" src="pavel-avatar.jpg" alt="Pavel"><div><b>Pavel</b><br><small>Candidate · Principal Product Manager</small></div><div class="vlang-bar" role="group" aria-label="Video language"><button type="button" class="vlang on" data-src="mirelo-pitch.mp4" data-poster="mirelo-pitch-poster.jpg" data-dur="0:54" data-ratio="832/848">Pitch</button><button type="button" class="vlang" data-src="mirelo-whatif.mp4" data-poster="mirelo-whatif-poster.jpg" data-dur="0:24" data-ratio="16/9">Fun</button></div></div>
-          <div class="video-frame"><video controls playsinline preload="metadata" src="mirelo-pitch.mp4" poster="mirelo-pitch-poster.jpg" style="aspect-ratio:832/848"></video><span class="video-badge">Watch me:)</span></div><script>document.querySelectorAll('.video-frame').forEach(function (f) {
+          <div class="video-head"><img class="avatar" src="pavel-avatar.jpg" alt="Pavel"><div><b>Pavel</b><br><small>Candidate · Principal Product Manager</small></div><div class="vlang-bar" role="group" aria-label="Video language"><button type="button" class="vlang on" data-src="mirelo-pitch.mp4" data-poster="mirelo-pitch-poster-end.jpg" data-dur="0:54" data-ratio="832/848">Pitch</button><button type="button" class="vlang" data-src="mirelo-whatif.mp4" data-poster="mirelo-whatif-poster.jpg" data-dur="0:24" data-ratio="16/9">Fun</button></div></div>
+          <div class="video-frame"><video controls playsinline preload="metadata" src="mirelo-pitch.mp4" poster="mirelo-pitch-poster-end.jpg" style="aspect-ratio:832/848"></video><span class="video-badge">Watch me:)</span></div><script>document.querySelectorAll('.video-frame').forEach(function (f) {
   var v = f.querySelector('video'), b = f.querySelector('.video-badge');
   v.addEventListener('play', function () { b.style.display = 'none'; });
 });</script>
