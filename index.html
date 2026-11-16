@@ -288,6 +288,8 @@
   @media (max-width:760px) { .snaps .snap-grid { grid-template-columns:1fr; } .snaps figure:nth-child(n) { grid-column:auto; } }
   body > footer { display:none; }
   header.nav nav { display:none; }
+  .video-badge { background:#dbffbc; color:#052e16; font-weight:500; }
+  .half-join.target .half-tag { display:block; width:128px; height:32px; margin:0 auto 14px; font-size:0; color:transparent; background:url(mirelo-logo.svg) center/contain no-repeat; filter:invert(1); }
 </style>
 </head>
 <body>
@@ -311,9 +313,12 @@
       
       <div class="video-wrap">
         <div class="video-card">
-          <div class="video-head"><img class="avatar" src="pavel-avatar.jpg" alt="Pavel"><div><b>Pavel</b><br><small>Candidate · Principal Product Manager</small></div><div class="vlang-bar" role="group" aria-label="Video language"><button type="button" class="vlang on" data-src="mirelo.mp4" data-poster="mirelo-poster.jpg" data-dur="1:37" data-ratio="832/848">Pitch</button><button type="button" class="vlang" data-src="mirelo-whatif.mp4" data-poster="mirelo-whatif-poster.jpg" data-dur="0:24" data-ratio="16/9">Fun</button></div></div>
-          <video controls playsinline preload="metadata" src="mirelo.mp4" poster="mirelo-poster.jpg" style="aspect-ratio:832/848"></video>
-          <div class="video-foot"><span>Video for Mirelo</span><span class="vdur">1:37</span></div>
+          <div class="video-head"><img class="avatar" src="pavel-avatar.jpg" alt="Pavel"><div><b>Pavel</b><br><small>Candidate · Principal Product Manager</small></div><div class="vlang-bar" role="group" aria-label="Video language"><button type="button" class="vlang on" data-src="mirelo-pitch.mp4" data-poster="mirelo-pitch-poster.jpg" data-dur="0:54" data-ratio="832/848">Pitch</button><button type="button" class="vlang" data-src="mirelo-whatif.mp4" data-poster="mirelo-whatif-poster.jpg" data-dur="0:24" data-ratio="16/9">Fun</button></div></div>
+          <div class="video-frame"><video controls playsinline preload="metadata" src="mirelo-pitch.mp4" poster="mirelo-pitch-poster.jpg" style="aspect-ratio:832/848"></video><span class="video-badge">Watch me:)</span></div><script>document.querySelectorAll('.video-frame').forEach(function (f) {
+  var v = f.querySelector('video'), b = f.querySelector('.video-badge');
+  v.addEventListener('play', function () { b.style.display = 'none'; });
+});</script>
+          <div class="video-foot"><span>Video for Mirelo</span><span class="vdur">0:54</span></div>
         </div>
           <script>
           document.querySelectorAll('.vlang').forEach(function (b) {
@@ -355,7 +360,7 @@
       <path d="M250,4 C250,90 500,60 500,140"/><path d="M750,4 C750,90 500,60 500,140"/>
     </svg>
     <svg class="half-arrows-mobile" viewBox="0 0 20 60" aria-hidden="true"><path d="M10,2 L10,56"/></svg>
-    <div class="half-join target"><span class="half-tag">Mirelo · first product hire</span><h3>Great sound models → a product creators love</h3><p>Generative audio is new to me. Taking AI from 0 to 1, fast and on data, isn&#x27;t. That&#x27;s why I can do it with you.</p></div>
+    <div class="half-join target"><span class="half-tag">Mirelo</span><h3>Great sound models → a product creators love</h3><p>Generative audio is new to me. Taking gen AI from 0 to 1 isn&#x27;t. That&#x27;s why I can do it with you.</p></div>
   </div>
 </section>
 <section class="band checks">
